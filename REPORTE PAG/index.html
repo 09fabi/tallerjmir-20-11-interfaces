@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img src="logo.png" width="60px" alt="Descripción de la imagen">
+            <div class="spacer"></div>
+        </div>
+      <div  class="logo"></div>
+      <div class="nav-items">
+        <button class="a"><a href="/">Home</a></button> <button class="a"><a href="/">Activos</a></button>  <button class="a"><a href="/">Reportes</a></button>
+      </div>
+    </nav>
+
+    
+
+    <form class="form">
+        <label class="lb" for="nome">Titulo:</label>
+              <input name="nome" id="nome" type="text" class="infos">
+
+              <div>
+                <label class="lb" for="estado_activo">Proyecto:</label>
+                <label class="infos" style="display: inline-block; margin-right: 162px;">
+                  Todos
+                  <input name="estado_activo" id="nome1" type="radio">
+                </label>
+                <label class="infos" style="display: inline-block;">
+                  Particular
+                  <input name="estado_activo" id="nome2" type="radio">
+                </label>
+              </div>
+              
+        
+              <label for="data" class="lb">Desde:</label>
+              <input name="data" id="data" type="date" class="infos">
+
+              <label for="data" class="lb">Hasta:</label>
+              <input name="data" id="data" type="date" class="infos">
+
+              <div>
+                <label class="lb" for="estado_activo">Estado activo:</label>
+                <label class="infos" style="display: inline-block; margin-right: 15px;">
+                  General
+                  <input name="estado_activo" id="nome1" type="radio">
+                </label>
+                <label class="infos" style="display: inline-block;">
+                  Vigente
+                  <input name="estado_activo" id="nome2" type="radio">
+                </label>
+                <label class="infos" style="display: inline-block;">
+                    Dado de baja
+                    <input name="estado_activo" id="nome2" type="radio">
+                  </label>
+              </div>
+
+              <div>
+                <label class="lb" for="estado_activo">Ordenar:</label>
+                <label class="infos" style="display: inline-block; margin-right: 162px;">
+                  Fecha
+                  <input name="estado_activo" id="nome1" type="radio">
+                </label>
+                <label class="infos" style="display: inline-block;">
+                  Activo
+                  <input name="estado_activo" id="nome2" type="radio">
+                </label>
+              </div>
+              
+
+        
+              <button id="send" type="submit">Enviar</button>
+              <button id="limpar" type="reset">Cancelar </button>
+            </form>
+</body>
+</html>

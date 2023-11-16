@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+}
+
+.tarjeta h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.fecha {
+    font-size: 14px;
+    position: absolute;
+    top: 10px; /* Alinea la fecha en la parte superior */
+    right: 10px; /* Alinea la fecha en la parte derecha */
+}
+
+.estado {
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px; /* Alinea el estado en la parte inferior */
+    right: 10px; /* Alinea el estado en la parte derecha */
+    background-color: #46a818; /* Fondo de color para el estado */
+    color: #ffffff; /* Texto blanco para el estado */
+    padding: 5px 10px; /* Espacio dentro del cuadro del estado */
+    border-radius: 5px;
+}
+
+nav {
+    height: 80px;
+    background: #fdcc04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+
+ /* Estilos para el nuevo navbar */
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3dd83;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilos para el botón de agregar a la izquierda */
+.add-button button {
+    background-color: #fdfeff;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+/* Estilos para el icono en el botón de agregar */
+.add-button button i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilos para el cuadro de búsqueda y las opciones de filtro a la derecha */
+.search-filter {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el cuadro de búsqueda con borde negro */
+.search-box input {
+    padding: 5px;
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 5px;
+}
+
+/* Estilos para los botones de ordenar por */
+.order-button {
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+/* Estilos para los botones de ordenar por al pasar el cursor sobre ellos */
+.order-button:hover {
+    background-color: #444;
+}
+
+/* Styles for the Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Styles for the Form within the Modal */
+#addForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#addForm label {
+    margin-bottom: 10px;
+}
+
+#addForm input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#addForm button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Additional styles for the button to open the modal */
+.add-button button {
+    /* Your existing styles for the button */
+    /* ... */
+    cursor: pointer;
+}
+
+.card {
+    width: 250px;
+    height: 170px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #000, #272727);
+    border-radius: 8px;
+    z-index: 1;
+    margin: 0 auto 20px;
+  }
+  
+  .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+  }
+  
+  .circle {
+    padding: 0 4px;
+  }
+  
+  .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas en cada fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+
+  .card__content {
+    padding: 10px;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .card__content {
+    position: relative; /* Hace que los elementos internos se posicionen relativamente a este contenedor */
+  }
+  
+  .date {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    margin: 10px;
+    font-size: 10px;
+  }
+  
+  .green-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    background-color: #00ca4e;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .green-button:hover {
+    background-color: #009738;
+  }
+  
+  .a {
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 12px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
